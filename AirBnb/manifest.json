@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "AirBnb",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.airbnb.ca/co-hosting?locale=en&ref=nav_dropdown"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
